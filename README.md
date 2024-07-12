@@ -90,20 +90,18 @@ Outcome of console.log() Statements
  Explanation:
 
 1.After foo1(arr);
-.The foo1 function takes arg and pushes 3 into it. Since arg is a reference to arr, the original array is modified.
-.console.log(arr); // [1, 2, 3]
+	.The foo1 function takes arg and pushes 3 into it. Since arg is a reference to arr, the original array is modified.
+	.console.log(arr); // [1, 2, 3]
 2.After foo2(arr);
-•The foo2 function reassigns arg to a new array [1, 2, 3, 4]. However, this does not affect the original arr because arg is a local 
- variable in foo2.
-•console.log(arr); // [1, 2, 3]
+	•The foo2 function reassigns arg to a new array [1, 2, 3, 4]. However, this does not affect the original arr because arg is a 		local variable in foo2.
+	•console.log(arr); // [1, 2, 3]
 3.After foo3(arr);
-•The foo3 function creates a new reference b that points to the same array as arg and pushes 3 into it. This modifies the original array.
-•console.log(arr); // [1, 2, 3, 3]
+	•The foo3 function creates a new reference b that points to the same array as arg and pushes 3 into it. This modifies the 		 original array.
+	•console.log(arr); // [1, 2, 3, 3]
 4.After foo4(arr);
-•The foo4 function creates a new reference b that initially points to the same array as arg, but then b is reassigned to a new array  
-[1, 2, 3, 4]
-. This reassignment does not affect the original array.
-•console.log(arr); // [1, 2, 3, 3]
+	•The foo4 function creates a new reference b that initially points to the same array as arg, but then b is reassigned to a new 		 array [1, 2, 3, 4] 	
+	. This reassignment does not affect the original array.
+	•console.log(arr); // [1, 2, 3, 3]
 
  
 
